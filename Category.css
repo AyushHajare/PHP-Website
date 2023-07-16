@@ -1,0 +1,110 @@
+body{
+	margin: 0;
+	background-color: #FFF;
+	width: 100%;
+	overflow-x: hidden;
+	font-family: "Poppins",serif;
+}
+a{
+	text-decoration: none;
+}
+
+.heads{
+	background-color: #11112e;
+	color: orange;
+	display: flex;
+}
+.img1{
+	float: left;
+	width: 70px;
+	height: 70px;
+	margin: 20px;
+	border-radius: 50%;
+}
+.heads h1{
+	margin: 28px;
+	width: 55%;
+	color: cornsilk;
+}
+.heads a{
+	color: orange;
+}
+input[type=text]{
+	margin-top: 40px;
+}
+button{
+	margin:0px 20px 0px 0px;
+}
+.img2{
+	width: 60px;
+	height: 60px;
+	padding: 5px;
+	margin: 25px 10px 0px 20px;
+}
+
+
+.contact{
+	padding: 1%;
+	text-align: center;
+	background-color: #912512;
+}
+.contact h2{
+	font-weight: bold;
+	color: cornsilk;
+}
+
+
+.cont{
+	padding: 5% 8%;
+}
+.cont{
+	background: url(photos/aboutimg.jpg);
+	background-size: cover;
+}
+.main{
+	padding: 2%;
+	background-color: #14213d;
+	border: 4px solid black;
+	border-radius: 25px;
+}
+.main ul{
+	color: aliceblue;
+	padding: 2%;
+	font-size: 18px;
+}
+.main table{
+	background-color: ghostwhite;
+	color: black;
+	padding-block: 2%;
+	margin-block: 2%;
+	border-radius: 25px;
+}
+
+
+.follow{
+	/*background-color: #12999a;*/
+	background-color: #15314b;
+	padding-top: 25px;
+}
+.follow h3{
+	font-weight: bold;
+	color: cornsilk;
+}
+.ico{
+	padding: 20px;	
+}
+.ico img{
+	margin-inline: 5%;
+	border-radius: 15px;
+}
+
+footer{
+	background-color: #12113a;
+	padding: 20px;
+	text-align: center;
+}
+footer h3{
+	font-size: 20px;
+	font-weight: bold;
+	color: cornsilk;
+}

@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TechCart Shop - SignUp</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="bootstrap-5.3.0-alpha2-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Cardo|Inter|Lexend|Tangerine|Helvetica|Poppins">
+    <link rel="stylesheet" type="text/css" href="bootstrap-5.3.0-alpha2-dist/fontawesome.css">
+    <link rel="stylesheet" href="rl4.css">
+    <link rel="stylesheet" type="text/css" href="signup.css">
+    
+
+</head>
+<body>
+
+   <header>
+    <div class="heads">
+      <a href="index.html"><img src="photos/logo2.jpg" class="img1"></a>
+      <h1>Techcart Shop</h1>
+    </div>
+  </header>
+
+    <section>
+    <div class="log">
+      <center>
+        <div class="tab">
+          <h2 style="text-align: center;font-size: 35px; font-weight: bold; padding: 25px; color: mintcream;">Create Account</h2>
+            
+            <form action="action.php" method="post" class="form" id="form" name="form">
+              
+              <div class="form__control">
+                <label>First Name:</label>
+                <input type="text" name="fname" placeholder="Please Enter Your First Name.." id="firstname" autocomplete="off">
+                <div>
+                <i class="fa fa-check-circle"></i>
+                <i class="fa fa-exclamation-circle"></i>
+                </div>
+                <small>Error message</small>
+              </div>
+
+              <div class="form__control">
+                <label>Last Name:</label>
+                <input type="text" name="lname" placeholder="Please Enter Your Last Name.."  id="lastname" autocomplete="off">
+                <i class="fa fa-check-circle"></i>
+                <i class="fa fa-exclamation-circle"></i>
+                <small>Error message</small>
+              </div>
+              
+              <div class="form__control">
+                <label>E-Mail:</label>
+                <input type="email" name="email" placeholder="example1@gmail.com" id="email" autocomplete="off">
+                <i class="fa fa-check-circle"></i>
+                <i class="fa fa-exclamation-circle"></i>
+                <small>Error message</small>
+              </div>
+              <div class="form__control">
+                <label>Password:</label>
+                <input type="password" name="pwd" placeholder="Example: aA12@" id="password" autocomplete="off">
+                <i class="fa fa-check-circle"></i>
+                <i class="fa fa-exclamation-circle"></i>
+                <small>Error message</small>
+              </div>
+              <div class="form__control">
+                <label>Confirm Password:</label>
+                <input type="password" name="cpwd" placeholder="Example: aA12@" id="confirmPassword" autocomplete="off">
+                <i class="fa fa-check-circle"></i>
+                <i class="fa fa-exclamation-circle"></i>
+                <small>Error message</small>
+              </div>
+
+              <div class="form__control">
+                <label>DOB:</label>
+                <!-- <input type="date" name="dob" id="dob" autocomplete="off"> -->
+                <input type="date" id="start" name="trip-start" value="dd/mm/yy" style="width: 560px; height: 30px;">
+              </div>
+              <input type="hidden" name="sub" value="123">
+              <div class="sub">
+                  <input type="submit" value="Sign-Up">
+              </div>  
+              
+<!--             <div class="button" style="margin: auto; width: 130px;" >
+              <input type="submit" value="Sign-In">
+            </div> -->
+
+            </div>
+          </form>
+        </div>
+      </center>
+    </div>
+  </section>
+
+  <center>
+    <div class="follow">
+      <h3 align="center">Follow US</h3>
+      <div class="ico">
+        <a href="#"><img src="photos/insta.jpg" height="60" width="60"></a>
+          <a href="#"><img src="photos/facebook.jpg" height="60" width="60"></a>
+          <a href="#"><img src="photos/twitt.png" height="60" width="60"></a>
+          <a href="#"><img src="photos/whatsapp.png" height="60" width="60"></a>
+          <a href="#"><img src="photos/linkedin.jpg" height="60" width="60"></a>
+      </div>
+    </div>
+  </center>
+
+  <footer>
+    <h3>Copyright &copy; 2023 Techcart Shop</h3>
+  </footer>
+  
+  <script src="rl4.js"></script>
+</body>
+</html>

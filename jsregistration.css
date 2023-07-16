@@ -1,0 +1,94 @@
+body {
+    background: #eee;
+    margin: 7px 0 15px 0;
+    text-align: center;
+    font-size: small;
+    font-family: "Lucida Grande", Tahoma, Arial, Verdana, sans-serif;
+}
+
+#container {
+    text-align: left;
+    background: #fff;
+}
+
+#container,
+#top,
+#bottom,
+#footer {
+    margin: 0 auto;
+    width: 740px;
+}
+
+#top,
+#bottom {
+    width: 650px;
+    height: 10px !important;
+    display: block !important;
+}
+
+#top {
+    margin-top: 10px;
+}
+
+form ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    width: 100%;
+}
+
+
+form li {
+    display: block;
+    margin: 0;
+    padding: 4px 5px 2px 9px;
+    clear: both;
+}
+
+form li div,
+form li span {
+    margin: 0 4px 0 0;
+    padding: 0 0 8px 0;
+    color: #444;
+}
+
+
+.input {
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.input label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+.input input {
+    width: 100%;
+    height: 40px;
+    padding: 0 15px;
+    background-color: transparent;
+    border: 2px solid #f0f0f0;
+    border-radius: 5px;
+}
+
+.input small {
+    display: block;
+    color: #e74c3c;
+    font-weight: bold;
+    font-size: 11px;
+    padding-top: 3px;
+    visibility: hidden;
+}
+
+.input.success input {
+    border: 2px solid #2ecc71;
+}
+
+.input.error input {
+    border: 2px solid #e74c3c;
+}
+
+.input.error small {
+    visibility: visible;
+}

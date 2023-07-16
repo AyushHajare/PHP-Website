@@ -1,0 +1,152 @@
+<?php
+    //Connection 
+    $servername = "localhost";
+    $username = "root";
+    $password = "";
+    $dbname = "wpsem6";
+
+    $conn = mysqli_connect($servername, $username, $password, $dbname);
+
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>TechCart Shop - Product Details</title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="bootstrap-5.3.0-alpha2-dist/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Cardo|Inter|Lexend|Tangerine|Helvetica|Poppins">
+	<link rel="stylesheet" type="text/css" href="bootstrap-5.3.0-alpha2-dist/fontawesome.css">
+	<link rel="stylesheet" type="text/css" href="ProductManagement.css">
+	<link rel="stylesheet" type="text/css" href="responsive.css">
+</head>
+<body>
+	<header>
+		<div class="heads">
+			<a href="index.html"><img src="photos/logo2.jpg" class="img1"></a>
+			<h1>Techcart Shop</h1>
+			<form action="">
+		      <input type="text" placeholder="Search..." name="search">
+		      <button type="submit" style="background-color: orange;"><i class="fa fa-search"></i></button>
+		    </form>
+		    <a href="cart.html"><i class="fa fa-shopping-cart" style="font-size:25px;margin: 40px 20px 0px 40px;"></i></a>
+		    <div class="dropdown">
+				<i class="fa fa-user" style="font-size:25px;margin: 40px 0px 0px 40px;"></i>
+			    <i class="arrow down"></i></button>
+			    <div class="dropdown-content">
+			       	<a href="#">Name</a>
+			        <a href="#">Edit Profile</a>
+			        <a href="#">Change password</a>
+			        <a href="index.html">logout</a>
+			    </div>
+		    </div>
+		</div>
+	</header>
+
+	<div class="contact">
+		<h2>Products</h2>
+	</div>
+
+	<div class="cont">
+		<div class="main">
+			<div class="butt">
+				<button value="Add Product"><a href="Addproduct.html">Add Product</a></button>
+			</div>
+			<div class="drop">
+				<select>
+					<option disabled>Select Category--</option>
+					<option>Gaming Laptop</option>
+					<option>Professional Laptop</option>
+					<option>Creators Laptop</option>
+				</select>
+			</div>
+			<div class="tab">
+				<table cellpadding="15" cellspacing="0" width="100%">
+					<tr>
+						<th>Image</th>
+						<th>Name</th>
+						<th>Category</th>
+						<th>Description</th>
+						<th>Price</th>
+						<th>Action</th>
+					</tr>
+					<tr>
+						<td><img src="photos/gaming1.jpg" width="300" height="300"></td>
+						<td><b>Acer Nitro 5 Creators Laptop</b></td>
+						<td>Creators</td>
+						<td>Acer Nitro 5 Creators Laptop AMD Ryzen™ 7 7735HS Octa-core Processor- (8GB/ 512 GB SSD/NVIDIA GeForce RTX 3050 4GB Graphics/Windows 11 Home) AN515-47 with 39.6 Cm (15.6 Inch) IPS Display</td>
+						<td>₹1,84,999.00</td>
+						<td><button value="edit">Edit</button><button value="delete">Delete</button></td>
+					</tr>
+					<!-- <tr>
+						<td><img src="photos/gaming7_1.jpg" width="300" height="300"></td>
+						<td><b>Lenovo Legion5Pro</b></td>
+						<td>Gaming</td>
+						<td>Lenovo Legion5Pro Intel Core i7 11thGen (40cm) QHD 16:10 IPS Gaming Laptop(16GB/1TB SSD/RTX 3060 6GB Graphics/165Hz/Windows 11/MS Office/Blue Backlit/3months Game Pass/Stingray/2.5Kg),82JD005KIN</td>
+						<td>₹1,24,990.00</td>
+						<td><button value="edit">Edit</button><button value="delete">Delete</button></td>
+					</tr> -->
+					<tr>
+						<td><img src="photos/prof1_1.jpg" width="300" height="300"></td>
+						<td><b>ASUS Zenbook 14</b></td>
+						<td>Professional</td>
+						<td>ASUS Zenbook 14 OLED (2022), 14" (35.56 cms) 2.8K OLED 16:10 90Hz, Intel Core Evo i5-1240P 12th Gen, Thin and Light Laptop (16GB/512GB SSD/Windows 11/Office 2021/Blue/1.39 kg), UX3402ZA-KM531WS</td>
+						<td>₹89,990.00</td>
+						<td><button value="edit">Edit</button><button value="delete">Delete</button></td>
+					</tr>
+					<tr>
+						<td><img src="photos/prof3_1.jpg" width="300" height="300"></td>
+						<td><b>Lenovo ThinkPad E14</b></td>
+						<td>Professional</td>
+						<td>Lenovo ThinkPad E14 Intel Core i7 12th Gen 14" FHD IPS Thin and Light Laptop (16GB RAM/512GB SSD/Windows 11 Home/MS Office H&S 2021/Backlit Keyboard/FPR/Black/1.59 kg), 21E3S05B00</td>
+						<td>₹94,585.00</td>
+						<td><button value="edit">Edit</button><button value="delete">Delete</button></td>
+					</tr>
+					<tr>
+						<td><img src="photos/creat1_1.jpg" width="300" height="300"></td>
+						<td><b>Asus Creator Zenbook Pro 14</b></td>
+						<td>Creators</td>
+						<td>ASUS Zenbook Pro 14 Duo OLED (2022) with Dual Screen Touch Panel Core i7 12th Gen - (16 GB/1 TB SSD/Windows 11 Home/4 GB Graphics/Intel Integrated Iris Xe) UX8402ZE-M711WS Creator Laptop (14.5 inch, Tech Black, 1.75 kg kg, With MS Office)</td>
+						<td>₹1,44,990.00</td>
+						<td><button value="edit">Edit</button><button value="delete">Delete</button></td>
+					</tr>
+					<tr>
+						<td><img src="photos/creat2.jpg" width="300" height="300"></td>
+						<td><b>MSI Creator Z16P</b></td>
+						<td>Creators</td>
+						<td>MSI Creator Z16P, Intel 12th Gen. i9-12900H, 40CM QHD+ 165Hz Creator Laptop (64GB/2TB NVMe SSD/ Windows 11 Pro/Nvidia RTX A3000 12GB GDDR6/Lunar Grey/2.39Kg), B12UKST-209IN</td>
+						<td>₹3,80,990.00</td>
+						<td><button value="edit">Edit</button><button value="delete">Delete</button></td>
+					</tr>
+					<tr>
+						<td><img src="photos/creat3.jpg" width="300" height="300"></td>
+						<td><b>Dell</b></td>
+						<td>Creators</td>
+						<td>Dell Laptop with High Features</td>
+						<td>₹2,20,000.00</td>
+						<td><button value="edit">Edit</button><button value="delete">Delete</button></td>
+					</tr>
+				</table>
+			</div>
+		</div>
+	</div>
+
+	<center>
+		<div class="follow">
+			<h3 align="center">Follow US</h3>
+			<div class="ico">
+				<a href="#"><img src="photos/insta.jpg" height="60" width="60"></a>
+			   	<a href="#"><img src="photos/facebook.jpg" height="60" width="60"></a>
+			   	<a href="#"><img src="photos/twitt.png" height="60" width="60"></a>
+			   	<a href="#"><img src="photos/whatsapp.png" height="60" width="60"></a>
+			   	<a href="#"><img src="photos/linkedin.jpg" height="60" width="60"></a>
+			</div>
+		</div>
+	</center>
+
+	<footer>
+		<h3>Copyright &copy; 2023 Techcart Shop</h3>
+	</footer>
+
+</body>
+</html>

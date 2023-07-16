@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=
+    , initial-scale=1.0">
+    <title>js1copy</title>
+
+    <link rel="stylesheet" href="jsregistration.css">
+
+    <link rel="stylesheet" href="jsh1.css">
+
+
+
+
+</head>
+
+<body>
+
+    <body id="public">
+        <div style="height:30px"></div>
+        <div id="container">
+            <div style="height:30px"></div>
+
+            <form autocomplete="off" method="post" action="demo.html" onSubmit="return validate(this);" id="form">
+
+                <div class="info" style="padding-left:20px">
+                    <h2>Registration Form</h2>
+
+                </div>
+
+                <ul>
+
+
+                    <li class="input">
+                        <label for="username">
+                            Full Name </label>
+                        <div>
+                            <input id="username" name="username" type="text" autocomplete="off" /><br>
+                            <small>Error message</small>
+                        </div>
+                    </li>
+
+
+                    <li class="input">
+                        <label for="email">
+                            Email </label>
+                        <div>
+                            <input id="email" name="email" type="text" value="" autocomplete="off" /><br>
+                            <small>Error message</small>
+                        </div>
+                    </li>
+
+
+                    <!-- <li  class="   ">
+                        <label class="desc" id="title3" for="Field3">
+                            User-ID </label>
+                        <div>
+                            <input id="username" name="username" type="text" class="field text medium" value=""
+                                maxlength="255" tabindex="3" />
+                        </div>
+                    </li> -->
+
+
+                    <li class="input">
+                        <label for="password">
+                            Password </label>
+                        <div>
+                            <input id="password" name="password" type="password" class="field text medium" value=""
+                                maxlength="255" tabindex="4" /><br>
+                            <small>Error message</small>
+                        </div>
+                    </li>
+
+                    <li class="input">
+                        <label for="c-password">Confirmer Password</label>
+                        <div>
+                            <input type="password" name="c-password" id="c-password"
+                                placeholder="Confirmer Password" /><br>
+                            <small>Error message</small>
+                        </div>
+                    </li>
+
+
+                    <!-- <li id="foli6" class="   ">
+                        <label class="desc" id="title6" for="Field6">
+                            Gender </label>
+                        <div>
+                            <select id="gender" name="gender" class="field select medium" tabindex="5">
+                                <option value="0">Gender</option>
+                                <option value="1">Male</option>
+                                <option value="2">Female</option>
+                            </select>
+                        </div>
+                    </li>
+
+
+                    <li id="foli15" class="   "></li> -->
+
+
+                    <li class="buttons">
+                        <input type="submit" value="Submit" style=" background:#0060a1; 
+        color:#FFFFFF; font-size:14px; border:1px solid #0060a1" />
+                    </li>
+
+
+                </ul>
+            </form>
+            <div style="height:20px"></div>
+        </div><!--container-->
+
+        <script src="jsh1.js"></script>
+
+
+
+    </body>
+
+</body>
+
+</html>
